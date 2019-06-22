@@ -10,7 +10,7 @@ id: 1
 
 <exercise id="1" title="Welcome to the course!" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter1_01">
 </slides>
 
 </exercise>
@@ -169,14 +169,14 @@ In this exercise, you will train a model on the newly created training set and p
 
 </exercise>
 
-<exercise id="9" title="Compute confusion matrix" type="slides">
+<exercise id="9" title="Evaluating classification model performance" type="slides">
 
 <slides source="chapter1_09">
 </slides>
 
 </exercise>
 
-<exercise id="10" title="Train a classification tree model">
+<exercise id="10" title="Compute confusion matrix">
 
 As discussed in the previous video, there are a number of different metrics by which you can measure the performance of a classification model.  In this exercise, we will evaluate the performance of the model using test set classification error.  A confusion matrix is a convenient way to examine the per-class error rates for all classes at once.  
 
@@ -198,14 +198,36 @@ The `caret` package has been loaded for you.
 
 </exercise>
 
-<exercise id="11" title="Splitting criterion in trees" type="slides">
+<exercise id="11" title="Train a classification tree model">
 
-<slides source="chapter1_11">
+As discussed in the previous video, there are a number of different metrics by which you can measure the performance of a classification model.  In this exercise, we will evaluate the performance of the model using test set classification error.  A confusion matrix is a convenient way to examine the per-class error rates for all classes at once.  
+
+The `confusionMatrix()` function from the `caret` package prints both the confusion matrix and a number of other useful classification metrics such as "Accuracy" (fraction of correctly classified instances).
+
+The `caret` package has been loaded for you.
+
+**Instructions**
+
+- Generate class predictions for the `credit_test` data frame using the `credit_model` object.
+- Using the `caret::confusionMatrix()` function, compute the confusion matrix for the test set.
+
+<codeblock id="01_11">
+
+- To generate the class predictions, use the `predict()` function to create the `class_prediction` object, which will then contain the predicted class for each test set example.
+- The `confusionMatrix()` function computes a confusion matrix using `class_prediction` and `credit_test$default` (the test set labels). It does not require a `type` argument.
+
+</codeblock>
+
+</exercise>
+
+<exercise id="12" title="Splitting criterion in trees" type="slides">
+
+<slides source="chapter1_12">
 </slides>
 
 </exercise>
 
-<exercise id="12" title="Train a classification tree model">
+<exercise id="13" title="Compare models with a different splitting criterion">
 
 Train two models that use a different splitting criterion and use the validation set to choose a "best" model from this group. To do this you'll use the `parms` argument of the `rpart()` function. This argument takes a named list that contains values of different parameters you can use to change how the model is trained. Set the parameter `split` to control the splitting criterion.
 
@@ -218,7 +240,7 @@ The datasets `credit_test` and `credit_train` have already been loaded for you.
 - Generate predictions on the validation set using both models.
 - Classification error is the fraction of incorrectly classified instances.  Compute and compare the test set classification error of the two models by using the `ce()` function.
 
-<codeblock id="01_12">
+<codeblock id="01_13">
 
 - The `split` option in `rpart()` can be set to either `"gini"` or `"information"` for classification trees.
 - The `predict()` function is identical to previous exercises, but you need to use `credit_model1` and `credit_model2`.
