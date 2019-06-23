@@ -10,7 +10,7 @@ id: 2
 
 <exercise id="1" title="Introduction to regression trees" type="slides">
 
-<slides source="chapter1_01">
+<slides source="chapter2_01">
 </slides>
 
 </exercise>
@@ -80,7 +80,7 @@ The dataset `grade` is already in your workspace.
 
 </exercise>
 
-<exercise id="5" title="Train a regression tree model">
+<exercise id="4" title="Train a regression tree model">
 
 In this exercise, we will use the `grade_train` dataset to fit a regression tree using `rpart()` and visualize it using `rpart.plot()`.  A regression tree plot looks identical to a classification tree plot, with the exception that there will be numeric values in the leaf nodes instead of predicted classes.
 
@@ -94,7 +94,7 @@ The `grade_train` training set is loaded into the workspace.
 - Look at the model output by printing the model object.
 - Plot the decision tree using `rpart.plot()`.
 
-<codeblock id="02_05">
+<codeblock id="02_04">
 
 The `grade_model` object should be the `x` input to `rpart.plot()`.
 
@@ -102,14 +102,14 @@ The `grade_model` object should be the `x` input to `rpart.plot()`.
 
 </exercise>
 
-<exercise id="6" title="Performance metrics for regression" type="slides">
+<exercise id="5" title="Performance metrics for regression" type="slides">
 
-<slides source="chapter2_06">
+<slides source="chapter2_05">
 </slides>
 
 </exercise>
 
-<exercise id="7" title="Evaluate a regression tree model">
+<exercise id="6" title="Evaluate a regression tree model">
 
 Predict the final grade for all students in the test set.  The grade is on a 0-20 scale.  Evaluate the model based on test set [RMSE (Root Mean Squared Error)](https://en.wikipedia.org/wiki/Root-mean-square_deviation). RMSE tells us approximately how far away our predictions are from the true values. 
 
@@ -118,7 +118,7 @@ Predict the final grade for all students in the test set.  The grade is on a 0-2
 - First generate predictions on the `grade_test` data frame using the `grade_model` object.  
 - After generating test set predictions, use the `rmse()` function from the **Metrics** package to compute test set RMSE.  
  
-<codeblock id="02_07">
+<codeblock id="02_06">
 
 Pass the `grade_model` and `grade_test` objects to the `predict()` function.  Once you have those predictions, use them in the `rmse()` function, in combination with `grade_test$final_grade`.
 
@@ -126,14 +126,14 @@ Pass the `grade_model` and `grade_test` objects to the `predict()` function.  On
 
 </exercise>
 
-<exercise id="8" title="What are the hyperparameters for a decision tree" type="slides">
+<exercise id="7" title="What are the hyperparameters for a decision tree" type="slides">
 
-<slides source="chapter2_08">
+<slides source="chapter2_07">
 </slides>
 
 </exercise>
 
-<exercise id="9" title="Tuning the model">
+<exercise id="8" title="Tuning the model">
 
 Tune (or "trim") the model using the `prune()` function by finding the best "CP" value (CP stands for "Complexity Parameter").
 
@@ -143,7 +143,7 @@ Tune (or "trim") the model using the `prune()` function by finding the best "CP"
 - Retrieve the optimal CP value; the value for CP which minimizes cross-validated error of the model.
 - Use the `prune()` function trim the tree, snipping off the least important splits, based on CP.
 
-<codeblock id="02_09">
+<codeblock id="02_08">
 
 Once you define `cp_opt`, pass it to the `prune()` function to create a new model.
 Then plot the new model.
@@ -152,14 +152,14 @@ Then plot the new model.
 
 </exercise>
 
-<exercise id="10" title="Grid search for model selection" type="slides">
+<exercise id="9" title="Grid search for model selection" type="slides">
 
-<slides source="chapter2_10">
+<slides source="chapter2_09">
 </slides>
 
 </exercise>
 
-<exercise id="11" title="Generate a grid of hyperparameter values">
+<exercise id="10" title="Generate a grid of hyperparameter values">
 
 Use `expand.grid()` to generate a grid of `maxdepth` and `minsplit` values.
 
@@ -169,7 +169,7 @@ Use `expand.grid()` to generate a grid of `maxdepth` and `minsplit` values.
 - Use the `expand.grid()` function to generate a data frame containing all combinations 
 - Take a look at the resulting grid object
 
-<codeblock id="02_11>
+<codeblock id="02_10
 
 The `expand.grid()` function takes as input the vectors that you want to grid over.  Here we want to grid over the pre-defined vectors, `minsplit` and `maxdepth`.
 
@@ -177,7 +177,7 @@ The `expand.grid()` function takes as input the vectors that you want to grid ov
 
 </exercise>
 
-<exercise id="12" title="Generate a grid of models">
+<exercise id="11" title="Generate a grid of models">
 
 In this exercise, we will write a simple loop to train a "grid" of models and store the models in a list called `grade_models`.  R users who are familiar with the `apply` functions in R could think about how this loop could be easily converted into a function applied to a list as an extra-credit thought experiment.
 
@@ -188,7 +188,7 @@ In this exercise, we will write a simple loop to train a "grid" of models and st
 - The loop will by indexed by the rows of `hyper_grid`.  
 - For each row, there is a unique combination of the `minsplit` and `maxdepth` values that will be used to train a model.
 
-<codeblock id="02_12>
+<codeblock id="02_11>
 
 - The row `i` is needed to specify the correct `minsplit` and `maxdepth` values.
 - The data should be `grade_train`.
@@ -197,7 +197,7 @@ In this exercise, we will write a simple loop to train a "grid" of models and st
 
 </exercise>
 
-<exercise id="13" title="Evaluate the grid">
+<exercise id="12" title="Evaluate the grid">
 
 Earlier in the chapter we split the dataset into three parts: training, validation and test.  
 
@@ -215,7 +215,7 @@ A dataset that is not used in training is sometimes referred to as a "holdout" s
 - Inspect the model parameters of the best model.
 - Generate predictions on the test set using the best model to compute test set RMSE.
 
-<codeblock id="02_13>
+<codeblock id="02_12>
 
 - You should use `i` to grab the $i^{th}$ model from the `grade_models` list inside the loop.
 - Generate predictions on the `model` object and pass them to the `rmse()` function to generate validation RMSE.
