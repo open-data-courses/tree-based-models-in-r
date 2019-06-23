@@ -10,7 +10,7 @@ id: 3
 
 <exercise id="1" title="Introduction to bagged trees" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter3_01">
 </slides>
 
 </exercise>
@@ -84,7 +84,7 @@ You will need to specify the training dataset for the `data` argument.
 
 <exercise id="4" title="Evaluating the bagged tree performance" type="slides">
 
-<slides source="chapter1_04">
+<slides source="chapter3_04">
 </slides>
 
 </exercise>
@@ -136,7 +136,7 @@ Apply the `predict()` function to `credit_model` object and `credit_test` datase
 
 <exercise id="7" title="Using caret for cross-validating models" type="slides">
 
-<slides source="chapter1_07">
+<slides source="chapter3_07">
 </slides>
 
 </exercise>
