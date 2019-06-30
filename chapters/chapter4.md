@@ -10,7 +10,7 @@ id: 4
 
 <exercise id="1" title="Introduction to Random Forest" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter4_01">
 </slides>
 
 </exercise>
