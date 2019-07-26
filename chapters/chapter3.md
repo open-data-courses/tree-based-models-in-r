@@ -48,7 +48,7 @@ This is true, but there's another true statement here as well.
 
 <opt text="1 and 3 are correct" correct="true">
 
-Well done. Proceed to the next exercise
+Well done. Proceed to the next exercise.
 
 </opt>
 
@@ -74,7 +74,7 @@ The data frame `creditsub` is in the workspace.  This data frame is a subset of 
 - The `credit_train` and `credit_test` datasets from Chapter 1 are already loaded in the workspace.
 - Use the `bagging()` function to train a bagged tree model.
 - Inspect the model by printing it.
-<codeblock id="01_02">
+<codeblock id="03_03">
 
 You will need to specify the training dataset for the `data` argument.
 
