@@ -71,7 +71,7 @@ Next, we will go through an example.
 
 # Will you wait for a table or go elsewhere?
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/restaurante_example_table.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/restaurante_example_table.png?raw=TRUE)
 
 Notes: Let's say your friend is thinking of having dinner tonight at a restaurant near your house. We have some data from past customers, with some attributes and the outcome (if they waited for a table or not).
 
@@ -88,7 +88,7 @@ In this example, the goal is to build a classification tree that predicts whethe
 
 # Restaurant Example
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/restaurante_example_table_highlight.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/restaurante_example_table_highlight.png?raw=TRUE)
 
 Notes: Let's take a look at one data point in the training set.  Customer 4 went to the restaurant on a Friday or Saturday, it was not raining, they didn't have a reservation, and the wait estimate time was somewhere between 10 to 30 minutes.  In this case, they decided to stay at the restaurant and wait for the table rather than go elsewhere.
 
@@ -96,7 +96,7 @@ Notes: Let's take a look at one data point in the training set.  Customer 4 went
 
 # Decision Tree in R
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/dt_restaurant_example.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/dt_restaurant_example.png?raw=TRUE)
 
 Notes: It doesn't take much to create a decision tree in R. The output is very elegant and clear to understand. We'll talk about how to create this decision tree in R later, but for now, let's understand how you interpret this output.
 
@@ -106,7 +106,7 @@ Notes: It doesn't take much to create a decision tree in R. The output is very e
 
 - The wait estimate is 20 minutes, no reservation was made, and it is Wednesday
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/dt_restaurant_example.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/dt_restaurant_example.png?raw=TRUE)
 
 
 Notes: Let's suppose you want to predict whether your friend will wait for a table at a particular restaurant, or go elsewhere.  		
@@ -119,7 +119,7 @@ The wait estimate is 20 minutes, your friend doesn't have a reservation, and it 
 
 # Example
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/dt_restaurant_example_explained_new.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/dt_restaurant_example_explained_new.png?raw=TRUE)
 
 Notes: Starting with the top node of the tree, you must evaluate a query about a particular attribute of your friend's data (in this example, we ask whether the wait_estimate is greater or equal to 60). If the answer is yes, then you go to the left at the split, and if the answer is no, then you will go right. 		
   		  

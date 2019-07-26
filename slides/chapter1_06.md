@@ -10,7 +10,7 @@ Notes: Gabriela de Queiroz - Instructor. Now that you've had a brief introductio
 
 # Train/Test Split
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/train_test_split.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/train_test_split.png?raw=TRUE)
 
 Notes: So far you used the whole dataset to train your model. But this will most likely lead to a result that it is too optimistic. 
 One alternative is to split the data into 2 pieces. The first part of the data, the so-called training set, can be used for building the model and the second part of the data, the test set, can be used to test the results. 

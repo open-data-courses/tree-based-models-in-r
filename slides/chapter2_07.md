@@ -18,7 +18,7 @@ There are several "knobs" that we can turn that affect how the tree is grown and
 ?rpart.control
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/rpart.control_args.png) {{2}}
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/rpart.control_args.png?raw=TRUE) {{2}}
 
 Notes: The rpart() function has a special control parameter, called "control", by which we can provide an object containing the values of any hyperparameters parameters we wish specify manually.  If you don't use the control parameter, then all the default values will be used. 
 

@@ -24,7 +24,7 @@ Regression trees are built in much the same way as they are for classification. 
 
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/rpart_args.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/rpart_args.png?raw=TRUE)
 
 
 Notes: The way we train a regression tree in R is the same as for a classification tree.  The rpart function is used for both methods. 

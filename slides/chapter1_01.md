@@ -72,7 +72,7 @@ And lastly you will learn about Boosted Trees (in particular, the Gradient Boost
 # Decision tree terminology: nodes
 
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/node_decision_tree.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/node_decision_tree.png?raw=TRUE)
 
 Notes: A decision tree is a hierarchical structure with nodes and directed edges. 
 
@@ -96,7 +96,7 @@ The root and internal nodes have binary test conditions associated with them and
 > help(package = "rpart") 
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5616/datasets/r_help_rpart_package.png){{2}}
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5616/datasets/r_help_rpart_package.png?raw=TRUE){{2}}
 
 Notes: One of the most popular packages for decision trees in R is the rpart package.  In the first two chapters of this course, you will use this package for training both classification and regression trees.  rpart is short for "recursive partitioning" which is a process used in the training of a decision tree model.
 
