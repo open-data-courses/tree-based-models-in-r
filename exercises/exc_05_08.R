@@ -1,7 +1,7 @@
 library(gbm)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch5_ex3_model.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch5_train_test.RData"))
+load("data/credit_ch5_ex3_model.RData")
+load("data/credit_ch5_train_test.RData")
 
 # Save credit_ch5_ex8_ntrees.RData
 #save(ntree_opt_oob, ntree_opt_cv, file = "credit_ch5_ex8_ntrees.RData")

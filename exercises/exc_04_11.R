@@ -1,6 +1,6 @@
 library(randomForest)
 
-load(url("https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/credit_ch1_train_test.RData"))
+load("data/credit_ch1_train_test.RData")
 
 # Execute the tuning process
 set.seed(1)              

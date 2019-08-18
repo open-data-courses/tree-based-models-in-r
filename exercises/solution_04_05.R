@@ -1,6 +1,6 @@
 library(randomForest)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch4_ex3_model.RData"))
+load("data/credit_ch4_ex3_model.RData")
 
 # Grab OOB error matrix & take a look
 err <- credit_model$err.rate

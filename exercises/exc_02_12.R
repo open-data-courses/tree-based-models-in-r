@@ -1,7 +1,7 @@
 library(Metrics)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/grade_train_valid_test.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/grade_ex11_models.RData"))
+load("data/grade_train_valid_test.RData")
+load("data/grade_ex11_models.RData")
 
 # Number of potential models in the grid
 num_models <- length(grade_models)

@@ -1,7 +1,7 @@
 library(ipred)
 library(caret)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch1_train_test.RData"))
+load("data/credit_ch1_train_test.RData")
 
 # Specify the training configuration
 ctrl <- trainControl(method = "cv",     # Cross-validation

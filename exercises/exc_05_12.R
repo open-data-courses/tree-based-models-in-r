@@ -1,7 +1,7 @@
 library(ROCR)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_all_preds.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch5_train_test.RData"))
+load("data/credit_all_preds.RData")
+load("data/credit_ch5_train_test.RData")
 
 # List of predictions
 preds_list <- list(dt_preds, bag_preds, rf_preds, gbm_preds)

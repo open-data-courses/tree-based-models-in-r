@@ -1,4 +1,4 @@
-grade <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/grade.csv")
+grade <- read.csv("data/grade.csv")
 
 # Look at the data
 str(___)

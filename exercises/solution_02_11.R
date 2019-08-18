@@ -1,7 +1,7 @@
 library(rpart)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/grade_train_valid_test.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/ch2_hyper_grid.RData"))
+load("data/grade_train_valid_test.RData")
+load("data/ch2_hyper_grid.RData")
 
 # Number of potential models in the grid
 num_models <- nrow(hyper_grid)

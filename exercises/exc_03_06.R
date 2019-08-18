@@ -1,8 +1,8 @@
 library(ipred)
 library(Metrics)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch1_train_test.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch3_ex3_model.RData"))
+load("data/credit_ch1_train_test.RData")
+load("data/credit_ch3_ex3_model.RData")
 
 # save auc to use in ex10:
 # save(credit_ipred_model_test_auc, file = "credit_ch3_ex6_auc.RData")

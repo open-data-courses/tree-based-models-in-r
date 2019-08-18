@@ -1,7 +1,7 @@
 library(rpart)
 library(rpart.plot)
 
-creditsub <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch1.csv")
+creditsub <- read.csv("data/credit_ch1.csv")
 
 # Look at the data
 str(creditsub)

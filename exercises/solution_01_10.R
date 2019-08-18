@@ -1,8 +1,8 @@
 library(rpart)
 library(caret)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch1_train_test.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch1_ex8_model.RData"))
+load("data/credit_ch1_train_test.RData")
+load("data/credit_ch1_ex8_model.RData")
 				
 # Generate predicted classes using the model object
 class_prediction <- predict(object = credit_model,  

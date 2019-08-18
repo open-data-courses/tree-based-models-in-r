@@ -1,8 +1,8 @@
 library(randomForest)
 library(Metrics)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch1_train_test.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch4_ex3_model.RData"))
+load("data/credit_ch1_train_test.RData")
+load("data/credit_ch4_ex3_model.RData")
 
 # Generate predictions on the test set
 pred <- ___(object = ___,

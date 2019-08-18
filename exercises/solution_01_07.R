@@ -1,4 +1,4 @@
-credit <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit.csv")
+credit <- read.csv("data/credit.csv")
 
 # Total number of rows in the credit data frame
 n <- nrow(credit)

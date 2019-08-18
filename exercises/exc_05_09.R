@@ -1,9 +1,9 @@
 library(gbm)
 library(Metrics)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch5_ex3_model.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch5_train_test.RData"))
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/credit_ch5_ex8_ntrees.RData"))
+load("data/credit_ch5_ex3_model.RData")
+load("data/credit_ch5_train_test.RData")
+load("data/credit_ch5_ex8_ntrees.RData")
  
 # Generate predictions on the test set using ntree_opt_oob number of trees
 preds1 <- predict(object = ___, 

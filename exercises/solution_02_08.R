@@ -1,7 +1,7 @@
 library(rpart)
 library(rpart.plot)
 
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/grade_ex4_model.RData"))
+load("data/grade_ex4_model.RData")
 
 # Plot the "CP Table"
 plotcp(grade_model)
