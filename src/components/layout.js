@@ -57,7 +57,7 @@ const Layout = ({ isHome, title, description, children }) => {
                                 <div className={classes.footerContent}>
                                     <section className={classes.footerSection}>
                                         <H3>About this course</H3>
-                                        <p>{meta.description}</p>
+                                        <div dangerouslySetInnerHTML={{__html: meta.description }} />
                                     </section>
 
                                     <section className={classes.footerSection}>
@@ -65,11 +65,11 @@ const Layout = ({ isHome, title, description, children }) => {
                                         {meta.showProfileImage && (
                                             <img
                                                 src="/profile.jpg"
-                                                alt=""
+                                                alt="Erin LeDell"
                                                 className={classes.profile}
                                             />
                                         )}
-                                        <p>{meta.bio}</p>
+                                        <div dangerouslySetInnerHTML={{__html: meta.bio }} />
                                     </section>
 
                                     {meta.footerLinks && (
