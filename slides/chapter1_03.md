@@ -13,19 +13,19 @@ Trees have advantages and disadvantages like any other algorithm. There are seve
 
 # Advantages
 
-✔ Simple to understand, interpret, visualize{{1}}
+✔ Simple to understand, interpret, visualize
 
-✔ Can handle both numerical and categorical features (inputs) natively{{2}}    
+✔ Can handle both numerical and categorical features (inputs) natively    
 
-✔ Can handle missing data elegantly{{3}}
+✔ Can handle missing data elegantly
 
-✔ Robust to outliers{{4}}
+✔ Robust to outliers
 
-✔ Requires little data preparation{{4}}
+✔ Requires little data preparation
 
-✔ Can model non-linearity in the data{{5}}
+✔ Can model non-linearity in the data
 
-✔ Can be trained quickly on large datasets{{6}}
+✔ Can be trained quickly on large datasets
 
 
 

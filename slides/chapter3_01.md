@@ -19,9 +19,9 @@ Although bagging is often applied to decision trees, it can be used with any typ
 
 # Bagging
 
-**B**ootstrap **AGG**regat**ING**{{1}}
+**B**ootstrap **AGG**regat**ING**
 
-![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/bootstrap.png?raw=TRUE) {{2}}
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/bootstrap.png?raw=TRUE) 
 
 
 Notes: Bagging is a ensemble method and the term "bagging" is shorthand for bootstrap aggregation.  Bagging uses bootstrap sampling and aggregates the individual models by averaging.  
@@ -32,8 +32,4 @@ Bootstrap sampling, or "bootstrapping", simply means sampling rows at random fro
 
 # Let's practice!
 
-Notes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique
-libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non
-commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat
-semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec
-velit nec, consectetur placerat enim.
+Notes: 
