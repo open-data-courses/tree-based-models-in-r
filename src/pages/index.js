@@ -17,7 +17,13 @@ export default ({ data }) => {
     return (
         <Layout isHome>
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
-            {chapters.map(({ slug, title, description }) => (
+			<h3 className={classes.subtitle}> A Free, Interactive Course</h3>
+            <div className={classes.introduction}>
+                <p>
+                    In this course you'll learn how to work with tree-based models in R. This course covers everything from using a single tree for regression or classification to more advanced ensemble methods. You'll learn to implement bagged trees, Random Forests, and boosted trees using the Gradient Boosting Machine, or GBM. These powerful techinques will allow you to create high performance regression and classification models for your data.
+                </p>
+                </div>
+        {chapters.map(({ slug, title, description }) => (
                 <section key={slug} className={classes.chapter}>
                     <h2 className={classes.chapterTitle}>
                         <Link hidden to={slug}>
