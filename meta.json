@@ -1,11 +1,11 @@
 {
     "courseId": "course-starter-r",
-    "title": "Machine Learning",
+    "title": "Machine Learning with Tree-Based Models in R",
     "slogan": "A free online course",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec velit nec, consectetur placerat enim.",
-    "bio": "Dr. Erin LeDell is the Chief Machine Learning Scientist at <a href='https://www.h2o.ai/'>H20.ai</a>. She is the co-author of several R packages, including the h2o package for machine learning. She is the founder of the <a href='https://wimlds.org'>Women in Machine Learning & Data Science organization</a> and co-founder of the <a href='https://www.rladies.org'>R-Ladies Global organization</a>. Before working at H2O.ai, she worked as a data scientist, founded DataScientific, Inc and received a PhD in Biostatistics from UC Berkeley. Follow @ledell on Twitter.",
+    "description": "Gabriela de Queiroz is a Data Scientist and the founder of <a href='https://www.rladies.org'>R-Ladies</a>, a world-wide organization for promoting diversity in the R community. She likes to mentor and share her knowledge through mentorship programs, tutorials and talks. She has worked in several startups and where she built teams, developed statistical models and employed a variety of techniques to derive insights and drive data-centric decisions. She holds 2 Master’s: one in Epidemiology and one in Statistics. Follow her on <a href='https://twitter.com/gdequeiroz'>Twitter</a>.",
+    "bio": "Dr. Erin LeDell is the Chief Machine Learning Scientist at <a href='https://www.h2o.ai/'>H20.ai</a>. She is the co-author of several R packages, including the h2o package for machine learning. She is the founder of the <a href='https://wimlds.org'>Women in Machine Learning & Data Science organization</a> and co-founder of the <a href='https://www.rladies.org'>R-Ladies Global organization</a>. Before working at H2O.ai, she worked as a data scientist, founded DataScientific, Inc and received a PhD in Biostatistics from UC Berkeley. Follow her on <a href='https://twitter.com/ledell'>Twitter</a>.",
     "siteUrl": "https://course-starter-r.netlify.com",
-    "twitter": "spacy_io",
+    "twitter": "ledell",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
     "testTemplate": "success <- function(text) {\n    cat(paste(\"\\033[32m\", text, \"\\033[0m\", sep = \"\"))\n}\n\n.solution <- \"${solutionEscaped}\"\n\n${solution}\n\n${test}\ntryCatch({\n    test()\n}, error = function(e) {\n    cat(paste(\"\\033[31m\", e[1], \"\\033[0m\", sep = \"\"))\n})",
     "juniper": {
