@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import SEO from './seo'
 import { Link } from './link'
-import { H3 } from './typography'
 import Logo from '../../static/logo.svg'
 
 import '../styles/index.sass'
@@ -55,13 +54,20 @@ const Layout = ({ isHome, title, description, children }) => {
 
                             <footer className={classes.footer}>
                                 <div className={classes.footerContent}>
-                                    <section className={classes.footerSection}>
-                                        <H3>About this course</H3>
+                                     <section className={classes.footerSection}>
+                                           <H3>Gabriela de Queiroz</H3>
+                                        {meta.showProfileImage && (
+                                            <img
+                                                src="/profile2.jpg"
+                                                alt="Gabriela de Queiroz"
+                                                className={classes.profile}
+                                            />
+                                        )}
                                         <div dangerouslySetInnerHTML={{__html: meta.description }} />
                                     </section>
 
                                     <section className={classes.footerSection}>
-                                        <H3>About me</H3>
+                                        <H3>Erin LeDell</H3>
                                         {meta.showProfileImage && (
                                             <img
                                                 src="/profile.jpg"
