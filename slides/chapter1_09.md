@@ -4,7 +4,7 @@ type: slides
 
 # Evaluate Model Performance
 
-Notes: Gabriela de Queiroz - Instructor. At this point, you have a classification tree model ready. The next steps would be to make a prediction and evaluate your predictions. Let's learn now how to create a prediction in R.
+Notes: At this point, you have a classification tree model ready. The next steps would be to make a prediction and evaluate your predictions. Let's learn now how to create a prediction in R.
 
 ---
 

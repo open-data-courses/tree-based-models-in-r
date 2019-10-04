@@ -4,8 +4,6 @@ type: slides
 
 # Performance metrics for regression
 
-Notes: Erin LeDell - Instructor
-
 Notes: Now that we've trained a regression tree, it's time to evaluate the performance of the model.  With classification trees, it makes sense to evalute using a metric like accuracy or classification error.  However, there is no such thing as accuracy in regression problems, so we need to evaluate our regression trees using a different metric.
 
 Since the response is some real-valued number, and our prediction is the same, it makes sense to measure how far our predictions are away from the true values.   

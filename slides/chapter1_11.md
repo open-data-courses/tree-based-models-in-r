@@ -4,7 +4,7 @@ type: slides
 
 # What are the hyperparameters for a decision tree?
 
-Notes: Erin LeDell - Instructor. In previous exercises, you've seen the basic usage of the rpart function, but so far we've trained decision trees using the default values for all the model parameters.  The default settings are chosen to provide a decent starting point on most datasets.  However, this leaves us with some room for improvement.  
+Notes: In previous exercises, you've seen the basic usage of the rpart function, but so far we've trained decision trees using the default values for all the model parameters.  The default settings are chosen to provide a decent starting point on most datasets.  However, this leaves us with some room for improvement.  
 
 There are several "knobs" that we can turn that affect how the tree is grown and in many cases, turning these knobs -- or model hyperparameters -- will results in a better performing model.  
 

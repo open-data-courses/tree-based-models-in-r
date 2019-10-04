@@ -4,14 +4,9 @@ type: slides
 
 # Welcome to the course!
 
-Notes: Erin LeDell & Gabriela de Queiroz - Machine Learning Scientist & Data Scientist.
+Notes: 
 
 Welcome to Machine Learning with Tree-Based Models in R! 
-
-I am Erin LeDell and I'm a Machine Learning Scientist and co-author of several R packages including the h2o package for machine learning.
-
-I'm Gabriela de Queiroz and I'm a Data Scientist and the founder of R-Ladies, a world-wide organization for promoting diversity in the R community.
-
 
 Supervised learning is the subfield of machine learning in which you train a model using input data and corresponding labels.  The converse is called unsupervised learning, where you learn from the input data alone.    
 

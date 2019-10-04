@@ -4,7 +4,7 @@ type: slides
 
 # Evaluating the performance of bagged tree models
 
-Notes: Gabriela de Queiroz - Instructor
+Notes: 
 
 You have already created a bagged tree model using the training set. Now it is time for to use the predict function to generate predicted labels on the test set. This will not be new for you since the predict function for bagged tree works exactly the same as the predict() function for a single tree.
 

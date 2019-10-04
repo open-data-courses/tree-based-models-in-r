@@ -4,7 +4,7 @@ type: slides
 
 # Understanding the Random Forest model output
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 In this video, you'll learn exactly what each part of the output from a Random Forest model object means. 
 

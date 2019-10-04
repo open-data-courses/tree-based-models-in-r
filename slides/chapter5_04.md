@@ -4,7 +4,7 @@ type: slides
 
 # Understanding GBM model output
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 In the last exercise, you trained a gbm model and looked at the output. You also looked at the summary of the model. In this video, we are going to explain the GBM model output you trained in more detail.
 

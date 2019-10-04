@@ -4,7 +4,7 @@ type: slides
 
 # Overview of the modeling process
 
-Notes: Gabriela de Queiroz - Instructor. Now that you've had a brief introduction to classification trees, let's move on to the modeling. In this section, we'll keep talking about the restaurant dataset and we will work on how to create a classification tree to make decisions.
+Notes: Now that you've had a brief introduction to classification trees, let's move on to the modeling. In this section, we'll keep talking about the restaurant dataset and we will work on how to create a classification tree to make decisions.
 
 ---
 

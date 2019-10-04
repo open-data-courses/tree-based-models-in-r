@@ -4,7 +4,7 @@ type: slides
 
 # Introduction to classification trees
 
-Notes: Gabriela de Queiroz - Instructor
+Notes: 
 
 Trees have advantages and disadvantages like any other algorithm. There are several advantages that make decision trees a useful machine learning algorithm.
 

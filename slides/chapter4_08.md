@@ -4,7 +4,7 @@ type: slides
 
 # OOB error vs. test set error
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 We've talked a bit about out-of-bag error and it's use in Random Forests as a quick built-in snapshot of model performance.
 

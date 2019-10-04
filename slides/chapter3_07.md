@@ -4,7 +4,7 @@ type: slides
 
 # Using caret for cross-validating models
 
-Notes: Gabriela de Queiroz - Instructor
+Notes: 
 
 Although using a single training and test set is a quick way to get an estimate of your model's performance, it's susceptible to variations in the data.  Variability in your data can stem both from the size of your training set -- smaller datsets have more variabilty -- and also from natural variabilty in the true population that you're sampling from.  
 

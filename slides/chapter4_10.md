@@ -4,7 +4,7 @@ type: slides
 
 # Tuning a Random Forest  model
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 Like any machine learning algorithm, the key to getting a good performance is to tune the model hyperparamters.  Random forest is one of the easier algorithms to tune because there are only a handful of hyperparameters that have a big impact on the performance of the model.
 

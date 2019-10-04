@@ -4,7 +4,7 @@ type: slides
 
 # Introduction to Random Forest
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 In Chapter 3, we introduced bagged trees, which are a big improvement over a single decision tree.  In this chapter, we'll introduce the Random Forest algorithm, which is an improvement upon bagged trees.
 

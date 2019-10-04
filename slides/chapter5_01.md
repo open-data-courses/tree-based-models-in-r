@@ -4,7 +4,7 @@ type: slides
 
 # Introduction to boosting
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 So far in this course, you've learned about decision trees, bagged trees, and random forests.  In this last chapter, you'll learn about boosted trees, another type of tree-based ensemble method.  
 

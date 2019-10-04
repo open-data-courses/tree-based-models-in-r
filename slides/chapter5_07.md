@@ -4,7 +4,7 @@ type: slides
 
 # Tuning a GBM model
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 Hyperparamter tuning is especially important in GBM models since they are prone to overfitting.  Like Random Forests, GBMs can also be tuned by performing a grid search across some subset of the GBM model hyperparamters.  
 

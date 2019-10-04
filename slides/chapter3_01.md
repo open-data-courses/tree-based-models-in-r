@@ -4,9 +4,7 @@ type: slides
 
 # Introduction to bagged trees
 
-Notes: Gabriela de Queiroz - Instructor
-
-In the first two chapters, we introduced decision trees.
+Notes: In the first two chapters, we introduced decision trees.
 
 As we've learned, one of the main drawbacks of decision trees is their high variance. Often a small change in the data can result in a very different series of splits, which can also make model interpretation somewhat precarious.
 
