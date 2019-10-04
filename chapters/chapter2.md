@@ -19,8 +19,6 @@ id: 2
 
 What is the difference between classification and regression?
 
-Hint: Either both are true or neither are true.
-
 <choice>
 <opt text="In classification, the response represents a category (e.g. "apples", "oranges", "bananas").">
 

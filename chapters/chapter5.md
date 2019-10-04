@@ -19,8 +19,6 @@ id: 5
 
 What is the main difference between bagged trees and boosted trees?
 
-Hint: Boosting is an iterative algorithm and bagging is not.
-
 <choice>
 <opt text="Boosted trees don't perform as well as bagged trees.">
 

@@ -19,8 +19,6 @@ id: 3
 
 What are the advantages of bagged trees compared to a single tree?
 
-Hint: Two of these three statements are correct.  Reminder: Bagged trees perform better than single trees.
-
 <choice>
 <opt text="Increases the accuracy of the resulting predictions">
 

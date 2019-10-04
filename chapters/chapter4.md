@@ -19,8 +19,6 @@ id: 4
 
 What is the main difference between bagged trees and the Random Forest algorithm?
 
-Hint: The difference is related to the features used at a split point in the decision trees that make up the ensemble.
-
 <choice>
 <opt text="In Random Forest, the decision trees are trained on a random subset of the rows, but in bagging, they use all the rows.">
 
@@ -117,8 +115,6 @@ The `confusionMatrix()` computes a confusion matrix using `class_prediction` and
 <exercise id="8" title="Advantage of OOB error">
 
 What is the main advantage of using OOB error instead of validation or test error?
-
-Hint: The out of bag sample can be used to evaluate the model without a test set.
 
 <choice>
 <opt text="Tuning the model hyperparameters using OOB error will lead to a better model.">

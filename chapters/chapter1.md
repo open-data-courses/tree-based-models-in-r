@@ -51,8 +51,6 @@ The `rpart.plot()` function takes the trained decision tree model as input.
 
 What are some advantages of using tree-based methods over other supervised learning methods?
 
-Hint: Two of these statements are true.
-
 <choice>
 <opt text="Model interpretability (easy to understand why a prediction is made).">
 
@@ -104,8 +102,6 @@ Starting with the top node of the tree, you must evaluate a query about a partic
 ![alt text](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/prediction_with_a_classification_tree_yes_no2.png?raw=TRUE?raw=TRUE)
 
 According to the model, will this person default on their loan?
-
-Hint: Follow the path down the tree.  Since the loan is 20 months (which is less than 44), the first split is to the left and the second split is to the right (since 20 months is not less than 16).
 
 <choice>
 <opt text="Yes" correct="true">
