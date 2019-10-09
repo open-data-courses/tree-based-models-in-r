@@ -24,15 +24,6 @@ But right now, let's learn how to do a train/test split in R using the restauran
 # Train/test split in R
 
 
-```yaml
-type: FullSlide
-key: 676ed2ecaf
-```
-
-
-`@part1`
-
-
 ```r
 # total number of rows in the restaurant data frame
 n <- nrow(restaurant)
