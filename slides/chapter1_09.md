@@ -50,7 +50,7 @@ For now, we will discuss accuracy and introduce the confusion matrix.
 
 # Accuracy
 
-$$ accuracy = \frac{\text{n of correct predictions}}{\text{n of total data points}}$$ {{1}}
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/formula_1_6.png?raw=TRUE)
 
 Notes: Accuracy measures how often the classifier predicts the class correctly. 
 
