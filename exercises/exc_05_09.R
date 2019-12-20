@@ -1,0 +1,25 @@
+library(gbm)
+library(Metrics)
+
+load("data/credit_ch5_ex3_model.RData")
+load("data/credit_ch5_train_test.RData")
+load("data/credit_ch5_ex8_ntrees.RData")
+ 
+# Generate predictions on the test set using ntree_opt_oob number of trees
+preds1 <- predict(object = ___, 
+                  newdata = ___,
+                  n.trees = ntree_opt_oob)
+                  
+# Generate predictions on the test set using ntree_opt_cv number of trees
+preds2 <- predict(object = ___, 
+                  newdata = ___,
+                  n.trees = ___)   
+
+# Generate the test set AUCs using the two sets of preditions & compare
+auc1 <- auc(actual = credit_test$default, predicted = preds1)  #OOB
+auc2 <- auc(actual = credit_test$default, predicted = ___)  #CV 
+
+# Compare AUC 
+print(paste0("Test set AUC (OOB): ", auc1))                         
+print(paste0("Test set AUC (CV): ", auc2))
+ 
