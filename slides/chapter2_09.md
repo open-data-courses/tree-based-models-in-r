@@ -4,7 +4,7 @@ type: slides
 
 # Grid Search for model selection
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 In the last video, we discussed some useful hyperparamters for decision trees.  
 

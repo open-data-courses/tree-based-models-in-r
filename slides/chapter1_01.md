@@ -4,14 +4,9 @@ type: slides
 
 # Welcome to the course!
 
-Notes: Erin LeDell & Gabriela de Queiroz - Machine Learning Scientist & Data Scientist.
+Notes: 
 
 Welcome to Machine Learning with Tree-Based Models in R! 
-
-I am Erin LeDell and I'm a Machine Learning Scientist and co-author of several R packages including the h2o package for machine learning.
-
-I'm Gabriela de Queiroz and I'm a Data Scientist and the founder of R-Ladies, a world-wide organization for promoting diversity in the R community.
-
 
 Supervised learning is the subfield of machine learning in which you train a model using input data and corresponding labels.  The converse is called unsupervised learning, where you learn from the input data alone.    
 
@@ -72,7 +67,7 @@ And lastly you will learn about Boosted Trees (in particular, the Gradient Boost
 # Decision tree terminology: nodes
 
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/node_decision_tree.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/node_decision_tree.png?raw=TRUE)
 
 Notes: A decision tree is a hierarchical structure with nodes and directed edges. 
 
@@ -96,7 +91,7 @@ The root and internal nodes have binary test conditions associated with them and
 > help(package = "rpart") 
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5616/datasets/r_help_rpart_package.png){{2}}
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5616/datasets/r_help_rpart_package.png?raw=TRUE){{2}}
 
 Notes: One of the most popular packages for decision trees in R is the rpart package.  In the first two chapters of this course, you will use this package for training both classification and regression trees.  rpart is short for "recursive partitioning" which is a process used in the training of a decision tree model.
 

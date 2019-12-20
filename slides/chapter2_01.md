@@ -4,7 +4,7 @@ type: slides
 
 # Introduction to regression trees
 
-Notes: Erin LeDell - Instructor. 
+Notes: 
 
 In the last section, you learned about classification trees. In this section, we'll talk about another type of decision tree, the regression tree, but first, let's talk about what a regression model is.  In regression, the goal is to predict a numeric outcome from a set of inputs.  The dependent variable, or "response", can be either continuous or integer-valued.  
 
@@ -24,7 +24,7 @@ Regression trees are built in much the same way as they are for classification. 
 
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5597/datasets/rpart_args.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/rpart_args.png?raw=TRUE)
 
 
 Notes: The way we train a regression tree in R is the same as for a classification tree.  The rpart function is used for both methods. 

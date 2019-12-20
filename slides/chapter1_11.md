@@ -8,11 +8,12 @@ Notes: In previous exercises, you've seen the basic usage of the rpart function,
 
 There are several "knobs" that we can turn that affect how the tree is grown and in many cases, turning these knobs -- or model hyperparameters -- will results in a better performing model.  
 
+
 ---
 
 # Decision tree hyperparameters
 
-```r
+```{r}
 ?rpart.control
 ```
 
@@ -42,7 +43,24 @@ The maxdepth parameter limits the maximum number of nodes between a leaf node an
 
 # Cost-Complexity Parameter (CP)
 
-```r
+```{r}
+> plotcp(grade_model)
+```
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/plot_cp_ch2.png?raw=TRUE)
+
+Notes: In a decision tree, CP, which stands "Complexity Parameter", serves as a penalty term to control tree size, and is always monotonic with the number of splits (nsplit). The smaller the value of CP, the more complex will be the tree (the greater the number of splits).
+
+The rpart() function computes the 10-fold cross-validated error of the model over various values for CP and stores the results in a table inside the model.  
+
+
+We can also very easily plot the cross-validated error across the different values of CP using the plotcp() function.  This makes it easy to see right away what the optimal value for CP is.
+
+
+---
+
+# Cost-Complexity Parameter (CP)
+
+```rout
 > print(model$cptable)
           CP nsplit rel error    xerror       xstd
 1 0.06839852      0 1.0000000 1.0080595 0.09215642
@@ -53,6 +71,7 @@ The maxdepth parameter limits the maximum number of nodes between a leaf node an
 6 0.01817661      5 0.7846679 0.9337462 0.08087153
 7 0.01203879      6 0.7664912 0.9092646 0.07982862
 8 0.01000000      7 0.7544525 0.9407895 0.08399125
+
 ```
 
 ```r

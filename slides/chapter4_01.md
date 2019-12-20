@@ -4,7 +4,7 @@ type: slides
 
 # Introduction to Random Forest
 
-Notes: Erin LeDell - Instructor
+Notes: 
 
 In Chapter 3, we introduced bagged trees, which are a big improvement over a single decision tree.  In this chapter, we'll introduce the Random Forest algorithm, which is an improvement upon bagged trees.
 
@@ -41,7 +41,7 @@ Well, adding this extra bit of randomness leads to a collection of trees that ar
 > ?randomForest
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5590/datasets/rf_rhelp.png)
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5590/datasets/rf_rhelp.png?raw=TRUE)
 
 
 Notes: To run the Random Forest algorithm you will use the randomForest function from the randomForest package. Let's take a look at the randomForest function in R. 

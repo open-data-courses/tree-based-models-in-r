@@ -4,7 +4,7 @@ type: slides
 
 # Using caret for cross-validating models
 
-Notes: Gabriela de Queiroz - Instructor
+Notes: 
 
 Although using a single training and test set is a quick way to get an estimate of your model's performance, it's susceptible to variations in the data.  Variability in your data can stem both from the size of your training set -- smaller datsets have more variabilty -- and also from natural variabilty in the true population that you're sampling from.  
 
@@ -19,7 +19,7 @@ As we've discussed in earlier sections, one way to reduce the variance of an est
 - dataset size = 200 rows
 - k = 10 (number of cross validation folds)
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5622/datasets/k_fold.png)
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5622/datasets/k_fold.png?raw=TRUE)
 
 Notes: There are several strategies that all fall under the name, "cross-validation", but here we will focus on the most popular version, which is called k-fold cross-validation.
 
@@ -29,7 +29,7 @@ The first step is to partition the rows of the dataset into K subset of equal si
 
 # K-fold Cross-validation
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5622/datasets/k_fold_selected.png)
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5622/datasets/k_fold_selected.png?raw=TRUE)
 
 - 10 estimates of test set AUC
 - the average is the cross-validated estimate of AUC

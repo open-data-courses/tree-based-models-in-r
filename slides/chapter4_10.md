@@ -14,11 +14,11 @@ If you contrast tuning a random forest model to a support vector machine or deep
 
 # Random Forest Hyperparameters
 
-- ntree: number of trees{{1}}
-- mtry: number of variables randomly sampled as candidates at each split{{2}}
-- sampsize: number of samples to train on{{2}}
-- nodesize: minimum size (number of samples) of the terminal nodes{{3}}
-- maxnodes: maximum number of terminal nodes{{3}}
+- ntree: number of trees
+- mtry: number of variables randomly sampled as candidates at each split
+- sampsize: number of samples to train on
+- nodesize: minimum size (number of samples) of the terminal nodes
+- maxnodes: maximum number of terminal nodes
 
 Notes: Next, we'll review some of the most important hyperparamters for the Random Forest algorithm.
 

@@ -4,8 +4,6 @@ type: slides
 
 # Performance metrics for regression
 
-Notes: Erin LeDell - Instructor
-
 Notes: Now that we've trained a regression tree, it's time to evaluate the performance of the model.  With classification trees, it makes sense to evalute using a metric like accuracy or classification error.  However, there is no such thing as accuracy in regression problems, so we need to evaluate our regression trees using a different metric.
 
 Since the response is some real-valued number, and our prediction is the same, it makes sense to measure how far our predictions are away from the true values.   
@@ -16,11 +14,12 @@ Since the response is some real-valued number, and our prediction is the same, i
 
 - Mean Absolute Error (MAE)
 
-$$MAE = \frac{1}{n}\sum{ \mid actual - predicted \mid } $$ 
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/formula_2_5_1.png?raw=TRUE)
 
 - Root Mean Square Error (RMSE)
 
-$$RMSE = \sqrt{\frac{1}{n}\sum{(actual - predicted)^2 }} $$ 
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/formula_2_5_2.png?raw=TRUE)
+
 
 Notes: There are several metrics for regression but the two popular ones are the the Mean Absolute Error -- or MAE -- and the Root Mean Square Error -- also known as RMSE. 
 
