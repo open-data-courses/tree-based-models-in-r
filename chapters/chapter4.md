@@ -19,24 +19,22 @@ id: 4
 
 What is the main difference between bagged trees and the Random Forest algorithm?
 
-Hint: The difference is related to the features used at a split point in the decision trees that make up the ensemble.
-
 <choice>
 <opt text="In Random Forest, the decision trees are trained on a random subset of the rows, but in bagging, they use all the rows.">
 
-Incorrect.  Random Forest and bagged trees are both trained on random subsets of the rows.
+Random Forest and bagged trees are both trained on random subsets of the rows.
 
 </opt>
 
 <opt text="In Random Forest, only a subset of features are selected at random at each split in a decision tree.  In bagging, all features are used." correect="true">
 
-Correct!  This is the key difference between the two algorithms.
+This is the key difference between the two algorithms.
 
 </opt>
 
 <opt text="In Random Forest, there is randomness.  In bagging, there is no randomness.">
 
-Incorrect.  Random Forest and bagged trees are both trained on random subsets of the rows, so both algorithms include randomness.
+Random Forest and bagged trees are both trained on random subsets of the rows, so both algorithms include randomness.
 
 </opt>
 </choice>
@@ -62,14 +60,14 @@ The function `randomForest` takes the same arguments as the other modeling funct
 
 </exercise>
 
-<exercise id="5" title="Understanding Random Forest model output" type="slides">
+<exercise id="4" title="Understanding Random Forest model output" type="slides">
 
-<slides source="chapter4_05">
+<slides source="chapter4_04">
 </slides>
 
 </exercise>
 
-<exercise id="6" title="Train/test split">
+<exercise id="5" title="Evaluate out-of-bag error">
 
 Here you will plot the OOB error as a function of the number of trees trained, and extract the final OOB error of the Random Forest model from the trained model object.
 
@@ -79,7 +77,7 @@ Here you will plot the OOB error as a function of the number of trees trained, a
 - Get the OOB error rate for the Random Forest model.
 - Plot the OOB error rate against the number of trees in the forest.
 
-<codeblock id="04_06">
+<codeblock id="04_05">
 
 - Use `nrow()` to find the index of the last row of the error matrix.
 - Call `plot()` on `credit_model` to plot the trained Random Forest model. 
@@ -88,7 +86,7 @@ Here you will plot the OOB error as a function of the number of trees trained, a
 
 </exercise>
 
-<exercise id="7" title="Evaluate model performance on a test set">
+<exercise id="6" title="Evaluate model performance on a test set">
 
 Use the `caret::confusionMatrix()` function to compute test set accuracy and generate a confusion matrix.  Compare the test set accuracy to the OOB accuracy.
 
@@ -98,7 +96,7 @@ Use the `caret::confusionMatrix()` function to compute test set accuracy and gen
 - Using the `caret::confusionMatrix()` function, compute the confusion matrix for the test set.
 - Compare the test set accuracy reported from the confusion matrix to the OOB accuracy.  The OOB error is stored in `oob_err`, which is already in your workspace, and so OOB accuracy is just `1 - oob_err`.  
 
-<codeblock id="04_07">
+<codeblock id="04_06">
 
 The `class_prediction` object contains the predict class for each test set example.
 The `confusionMatrix()` computes a confusion matrix using `class_prediction` and `credit_test$default` (test set labels).
@@ -107,42 +105,38 @@ The `confusionMatrix()` computes a confusion matrix using `class_prediction` and
 
 </exercise>
 
-<exercise id="8" title="OOB error vs. test set error" type="slides">
+<exercise id="7" title="OOB error vs. test set error" type="slides">
 
-<slides source="chapter4_08">
+<slides source="chapter4_07">
 </slides>
 
 </exercise>
 
-<exercise id="9" title="Advantage of OOB error">
+<exercise id="8" title="Advantage of OOB error">
 
 What is the main advantage of using OOB error instead of validation or test error?
 
-Hint: The out of bag sample can be used to evaluate the model without a test set.
-
 <choice>
 <opt text="Tuning the model hyperparameters using OOB error will lead to a better model.">
-
-Incorrect.
 
 </opt>
 
 <opt text="If you evaluate your model using OOB error, then you don't need to create a separate test set." correect="true">
 
-Correct!  This allows you to use all of rows in your original dataset for training.
+This allows you to use all of rows in your original dataset for training.
 
 </opt>
 
 <opt text="OOB error is more accurate than test set error.">
 
-Incorrect.  OOB error would only be a better estimate if your OOB sample was bigger than the test set, so this is not universally true.
+OOB error would only be a better estimate if your OOB sample was bigger than the test set, so this is not universally true.
 
 </opt>
 </choice>
 
 </exercise>
 
-<exercise id="10" title="Evaluate test set AUC">
+<exercise id="9" title="Evaluate test set AUC">
 
 In Chapter 3, we learned about the [AUC](https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve) metric for evaluating binary classification models.  In this exercise, you will compute test set AUC for the Random Forest model.
 
@@ -151,7 +145,7 @@ In Chapter 3, we learned about the [AUC](https://en.wikipedia.org/wiki/Receiver_
 - Use the `predict()` function with `type = "prob"` to generate numeric predictions on the `credit_test` dataset. 
 - Compute the AUC using the `auc()` function from the **Metrics** package.
 
-<codeblock id="04_10">
+<codeblock id="04_09">
 
 Apply the `predict()` function to `credit_model` object and `credit_test` dataset.
 
@@ -159,14 +153,14 @@ Apply the `predict()` function to `credit_model` object and `credit_test` datase
 
 </exercise>
 
-<exercise id="12" title="Tuning a Random Forest model" type="slides">
+<exercise id="10" title="Tuning a Random Forest model" type="slides">
 
-<slides source="chapter4_12">
+<slides source="chapter4_10">
 </slides>
 
 </exercise>
 
-<exercise id="13" title="Tuning a Random Forest via  mtry">
+<exercise id="11" title="Tuning a Random Forest via  mtry">
 
 In this exercise, you will use the `randomForest::tuneRF()` to tune `mtry` (by training several models). This function is a specific utility to tune the `mtry` parameter based on OOB error, which is helpful when you want a quick & easy way to tune your model.  A more generic way of tuning Random Forest parameters will be presented in the following exercise.
 
@@ -178,7 +172,7 @@ In this exercise, you will use the `randomForest::tuneRF()` to tune `mtry` (by t
 - After tuning the forest, this function will also plot model performance (OOB error) as a function of the `mtry` values that were evaluated. 
 - Keep in mind that if we want to evaluate the model based on AUC instead of error (accuracy), then this is not the best way to tune a model, as the selection only considers (OOB) error.
 
-<codeblock id="04_13">
+<codeblock id="04_11">
 
 The only thing you need to do here is specify the response vector for the training set for `y` and 500 for `ntreeTry`.
 
@@ -186,7 +180,7 @@ The only thing you need to do here is specify the response vector for the traini
 
 </exercise>
 
-<exercise id="14" title="Tuning a Random Forest via tree depth">
+<exercise id="12" title="Tuning a Random Forest via tree depth">
 
 In Chapter 2, we created a manual grid of hyperparameters using the `expand.grid()` function and wrote code that trained and evaluated the models of the grid in a loop.  In this exercise, you will create a grid of `mtry`, `nodesize` and `sampsize` values.  In this example, we will identify the "best model" based on OOB error.  The best model is defined as the model from our grid which minimizes OOB error.  
 
@@ -198,7 +192,7 @@ Keep in mind that there are other ways to select a best model from a grid, such 
 - Write a simple loop to train all the models and choose the best one based on OOB error.
 - Print the set of hyperparameters which produced the best model.
 
-<codeblock id="04_14">
+<codeblock id="04_12">
 
 - The `hyper_grid` is created by passing the `mtry`, `nodesize` and `sampsize` vectors.
 - The loop should loop over `hyper_grid`. 

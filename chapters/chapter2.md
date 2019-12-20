@@ -19,37 +19,33 @@ id: 2
 
 What is the difference between classification and regression?
 
-Hint: Either both are true or neither are true.
-
 <choice>
 <opt text="In classification, the response represents a category (e.g. "apples", "oranges", "bananas").">
 
-Incorrect.  This is true, but the other statement is also true.
+This is true, but the other statement is also true.
 
 </opt>
 
 <opt text="In regression, the response represents a numeric value (e.g. price of a house)." >
 
-Incorrect.  This is true, but the other statement is also true.
+This is true, but the other statement is also true.
 
 </opt>
 
 <opt text="All of the above." correct="true">
 
-Correct!
-
 </opt>
 
 <opt text="None of the above.">
 
-Incorrect.  All the above are true.
+All the above are true.
 
 </opt>
 </choice>
 
 </exercise>
 
-<exercise id="3" title=" Split the data">
+<exercise id="3" title="Split the data">
 
 hese examples will use a subset of the [Student Performance Dataset](https://archive.ics.uci.edu/ml/datasets/Student+Performance) from UCI ML Dataset Repository.
 
@@ -64,6 +60,7 @@ In Chapter 1, we demonstrated a simple way to split the data into two pieces usi
 The dataset `grade` is already in your workspace.
 
 **Instructions**
+
 - Take a look at the data using the `str()` function.
 - Set a seed (for reproducibility) and then sample `n_train` rows to define the set of training set indices.
     - Draw a sample of size `nrow(grade)` from the number 1 to 3 (with replacement). You want approximately 70% of the sample to be 1 and the remaining 30% to be equally split between 2 and 3.
@@ -75,8 +72,6 @@ The dataset `grade` is already in your workspace.
 - To create `grade_train`, subset grade with the code `grade[assignment == 1]`. The other sets can be created in a similar fashion.
 
 </codeblock>
-
-</exercise>
 
 </exercise>
 
@@ -169,7 +164,7 @@ Use `expand.grid()` to generate a grid of `maxdepth` and `minsplit` values.
 - Use the `expand.grid()` function to generate a data frame containing all combinations 
 - Take a look at the resulting grid object
 
-<codeblock id="02_10
+<codeblock id="02_10">
 
 The `expand.grid()` function takes as input the vectors that you want to grid over.  Here we want to grid over the pre-defined vectors, `minsplit` and `maxdepth`.
 
@@ -188,7 +183,7 @@ In this exercise, we will write a simple loop to train a "grid" of models and st
 - The loop will by indexed by the rows of `hyper_grid`.  
 - For each row, there is a unique combination of the `minsplit` and `maxdepth` values that will be used to train a model.
 
-<codeblock id="02_11>
+<codeblock id="02_11">
 
 - The row `i` is needed to specify the correct `minsplit` and `maxdepth` values.
 - The data should be `grade_train`.
@@ -215,7 +210,7 @@ A dataset that is not used in training is sometimes referred to as a "holdout" s
 - Inspect the model parameters of the best model.
 - Generate predictions on the test set using the best model to compute test set RMSE.
 
-<codeblock id="02_12>
+<codeblock id="02_12">
 
 - You should use `i` to grab the $i^{th}$ model from the `grade_models` list inside the loop.
 - Generate predictions on the `model` object and pass them to the `rmse()` function to generate validation RMSE.

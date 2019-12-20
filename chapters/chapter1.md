@@ -51,8 +51,6 @@ The `rpart.plot()` function takes the trained decision tree model as input.
 
 What are some advantages of using tree-based methods over other supervised learning methods?
 
-Hint: Two of these statements are true.
-
 <choice>
 <opt text="Model interpretability (easy to understand why a prediction is made).">
 
@@ -101,22 +99,18 @@ After following the correct path down the tree for this individual's set of data
 
 Starting with the top node of the tree, you must evaluate a query about a particular attribute of your data point (e.g. is `months_loan_duration < 44`?).  If the answer is yes, then you go to the left at the split; if the answer is no, then you will go right.  At the next node you repeat the process until you end up in a leaf node, at which point you'll have a predicted class for your data point.    
 
-![alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_3022/datasets/prediction_with_a_classification_tree_yes_no2.png)
+![alt text](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/prediction_with_a_classification_tree_yes_no2.png?raw=TRUE?raw=TRUE)
 
 According to the model, will this person default on their loan?
 
-Hint: Follow the path down the tree.  Since the loan is 20 months (which is less than 44), the first split is to the left and the second split is to the right (since 20 months is not less than 16).
-
 <choice>
-<opt text="Yes" >
-
-Correct!
+<opt text="Yes" correct="true">
 
 </opt>
 
-<opt text="No" correct="true">
+<opt text="No">
 
-Incorrect. The decision tree predicts Yes (they will default on their loan).  The path, from the top of the tree downwards is Left, Right, Left, Right.
+The decision tree predicts Yes (they will default on their loan).  The path, from the top of the tree downwards is Left, Right, Left, Right.
 
 </opt>
 
@@ -198,36 +192,14 @@ The `caret` package has been loaded for you.
 
 </exercise>
 
-<exercise id="11" title="Train a classification tree model">
+<exercise id="11" title="Splitting criterion in trees" type="slides">
 
-As discussed in the previous video, there are a number of different metrics by which you can measure the performance of a classification model.  In this exercise, we will evaluate the performance of the model using test set classification error.  A confusion matrix is a convenient way to examine the per-class error rates for all classes at once.  
-
-The `confusionMatrix()` function from the `caret` package prints both the confusion matrix and a number of other useful classification metrics such as "Accuracy" (fraction of correctly classified instances).
-
-The `caret` package has been loaded for you.
-
-**Instructions**
-
-- Generate class predictions for the `credit_test` data frame using the `credit_model` object.
-- Using the `caret::confusionMatrix()` function, compute the confusion matrix for the test set.
-
-<codeblock id="01_11">
-
-- To generate the class predictions, use the `predict()` function to create the `class_prediction` object, which will then contain the predicted class for each test set example.
-- The `confusionMatrix()` function computes a confusion matrix using `class_prediction` and `credit_test$default` (the test set labels). It does not require a `type` argument.
-
-</codeblock>
-
-</exercise>
-
-<exercise id="12" title="Splitting criterion in trees" type="slides">
-
-<slides source="chapter1_12">
+<slides source="chapter1_11">
 </slides>
 
 </exercise>
 
-<exercise id="13" title="Compare models with a different splitting criterion">
+<exercise id="12" title="Compare models with a different splitting criterion">
 
 Train two models that use a different splitting criterion and use the validation set to choose a "best" model from this group. To do this you'll use the `parms` argument of the `rpart()` function. This argument takes a named list that contains values of different parameters you can use to change how the model is trained. Set the parameter `split` to control the splitting criterion.
 
@@ -240,7 +212,7 @@ The datasets `credit_test` and `credit_train` have already been loaded for you.
 - Generate predictions on the validation set using both models.
 - Classification error is the fraction of incorrectly classified instances.  Compute and compare the test set classification error of the two models by using the `ce()` function.
 
-<codeblock id="01_13">
+<codeblock id="01_12">
 
 - The `split` option in `rpart()` can be set to either `"gini"` or `"information"` for classification trees.
 - The `predict()` function is identical to previous exercises, but you need to use `credit_model1` and `credit_model2`.

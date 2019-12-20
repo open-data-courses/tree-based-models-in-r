@@ -19,24 +19,22 @@ id: 5
 
 What is the main difference between bagged trees and boosted trees?
 
-Hint: Boosting is an iterative algorithm and bagging is not.
-
 <choice>
 <opt text="Boosted trees don't perform as well as bagged trees.">
 
-Incorrect.  Typically boosted trees perform better than bagged trees.
+Typically boosted trees perform better than bagged trees.
 
 </opt>
 
 <opt text="Boosted trees have fewer hyperparameters to tune than bagged trees." >
 
-Incorrect. There are a few more hyperparameters in boosted trees.
+There are a few more hyperparameters in boosted trees.
 
 </opt>
 
 <opt text="Boosted trees improve the model fit by considering past fits and bagged trees do not." correct="true">
 
-Correct!  Boosting is an iterative algorithm that considers past fits to improve performance.
+Boosting is an iterative algorithm that considers past fits to improve performance.
 
 </opt>
 
@@ -58,7 +56,7 @@ Also, the the `gbm()` function requires the user to specify a `distribution` arg
 - Convert from a "no/yes" factor to a 0/1 numeric response column using the `ifelse()` function.
 - Train a 10,000-tree GBM model. 
 
-<codeblock id="04_03">
+<codeblock id="05_03">
 
 The first argument of the `ifelse()` function is a logical test -- it's asking which rows of the "default" column are set to "yes".  The second argument specifies what to return for the "yes" rows (in this case we want 1).  For all other rows (the "no" rows), we will set to 0.  So the second and third arguments should be 1 and 0, respectively.
 
@@ -121,7 +119,7 @@ The `auc()` function requires passing the prediction vectors to the `predicted` 
 
 <exercise id="7" title="GBM hyperparameters" type="slides">
 
-<slides source="chapter5_09">
+<slides source="chapter5_07">
 </slides>
 
 </exercise>
@@ -146,11 +144,11 @@ The `gbm.perf()` function takes the GBM model object as input.  You will also ne
 
 </exercise>
 
-<exercise id="12" title="OOB vs CV-based early stopping">
+<exercise id="9" title="OOB vs CV-based early stopping">
 
 In the previous exercise, we used OOB error and cross-validated error to estimate the optimal number of trees in the GBM.  These are two different ways to estimate the optimal number of trees, so in this exercise we will compare the performance of the models on a test set.  We can use the same model object to make both of these estimates since the `predict.gbm()` function allows you to use any subset of the total number of trees (in our case, the total number is 10,000).
 
-** Instructions **
+**Instructions**
 
 The `ntree_opt_oob` and `ntree_opt_cv` objects from the previous exercise (each storing an "optimal" value for `n.trees`) are loaded in the workspace.
 
@@ -158,7 +156,7 @@ Using the `credit_model` loaded in the workspace, generate two sets of predictio
 - One using the OOB estimate of `n.trees`: 3,233 (stored in `ntree_opt_oob`)
 - And the other using the CV estimate of `n.trees`: 7,889 (stored in `ntree_opt_cv`)
 
-<codeblock id="05_12">
+<codeblock id="05_09">
 
 The first set looks like this: `preds1 <- predict(credit_model, credit_test, n.trees = ntree_opt_oob)`.
 
@@ -166,14 +164,14 @@ The first set looks like this: `preds1 <- predict(credit_model, credit_test, n.t
 
 </exercise>
 
-<exercise id="13" title="Model comparison via ROC Curve & AUC" type="slides">
+<exercise id="10" title="Model comparison via ROC Curve & AUC" type="slides">
 
-<slides source="chapter5_13">
+<slides source="chapter5_10">
 </slides>
 
 </exercise>
 
-<exercise id="14" title="Compare all models based on AUC">
+<exercise id="11" title="Compare all models based on AUC">
 
 In this final exercise, we will perform a model comparison across all types of models that we've learned about so far: Decision Trees, Bagged Trees, Random Forest and Gradient Boosting Machine (GBM).  The models were all trained on the same training set, `credit_train`, and predictions were made for the `credit_test` dataset.
 
@@ -192,7 +190,7 @@ These predictions were made on `credit_test`, which is also loaded into the work
 
 - Apply the `Metrics::auc()` function to each of these vectors to calculate test set AUC.  Recall that the higher the AUC, the better the model.
 
-<codeblock id="05_14">
+<codeblock id="05_11">
 
 The prediction vectors pre-loaded into the workspace need to be passed to the `predicted` argument of the `auc()` function.
 
@@ -200,7 +198,7 @@ The prediction vectors pre-loaded into the workspace need to be passed to the `p
 
 </exercise>
 
-<exercise id="15" title="Plot & compare ROC curves">
+<exercise id="12" title="Plot & compare ROC curves">
 
 We conclude this course by plotting the ROC curves for all the models (one from each chapter) on the same graph.  The **ROCR** package provides the `prediction()` and `performance()` functions which generate the data required for plotting the ROC curve, given a set of predictions and actual (true) values.  
 
@@ -214,7 +212,7 @@ The **ROCR** package can plot multiple ROC curves on the same plot if you plot s
 - The `performance()` function generates the data necessary to plot the curve from the "prediction" object.  For the ROC curve, you will also pass along two measures, `"tpr"` and `"fpr"`.  
 - Once you have the "performance" object, you can plot the ROC curves using the `plot()` method.  We will add some color to the curves and a legend so we can tell which curves belong to which algorithm.
 
-<codeblock id="05_15">
+<codeblock id="05_12">
 
 The `prediction()` function requires two lists, the `preds_list` and `actuals_list`.
 
