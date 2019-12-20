@@ -3,9 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import SEO from './seo'
 import { Link } from './link'
-import { H3 } from './typography'
 import Logo from '../../static/logo.svg'
-
+import { H3 } from './typography'
 import '../styles/index.sass'
 import classes from '../styles/layout.module.sass'
 
@@ -55,21 +54,28 @@ const Layout = ({ isHome, title, description, children }) => {
 
                             <footer className={classes.footer}>
                                 <div className={classes.footerContent}>
-                                    <section className={classes.footerSection}>
-                                        <H3>About this course</H3>
-                                        <p>{meta.description}</p>
-                                    </section>
-
-                                    <section className={classes.footerSection}>
-                                        <H3>About me</H3>
+                                     <section className={classes.footerSection}>
+                                           <H3>Gabriela de Queiroz</H3>
                                         {meta.showProfileImage && (
                                             <img
-                                                src="/profile.jpg"
-                                                alt=""
+                                                src="/profile2.jpg"
+                                                alt="Gabriela de Queiroz"
                                                 className={classes.profile}
                                             />
                                         )}
-                                        <p>{meta.bio}</p>
+                                        <div dangerouslySetInnerHTML={{__html: meta.description }} />
+                                    </section>
+
+                                    <section className={classes.footerSection}>
+                                        <H3>Erin LeDell</H3>
+                                        {meta.showProfileImage && (
+                                            <img
+                                                src="/profile.jpg"
+                                                alt="Erin LeDell"
+                                                className={classes.profile}
+                                            />
+                                        )}
+                                        <div dangerouslySetInnerHTML={{__html: meta.bio }} />
                                     </section>
 
                                     {meta.footerLinks && (
