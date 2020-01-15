@@ -26,9 +26,3 @@ names(credit_caret_model)
 
 # Print the CV AUC
 credit_caret_model$results[,"ROC"]
-
-# Specify the training configuration
-ctrl <- trainControl(method = "cv",     # Cross-validation
-                     number = 5,        # 5 folds
-                     classProbs = TRUE,                  # For AUC
-                     summaryFunction = twoClassSummary)  # For AUC
