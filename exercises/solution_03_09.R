@@ -1,6 +1,3 @@
-# TO DO: Question for DataCamp, will the following code both work even if my answer uses the first one?
-# credit_test$default
-# credit_test[,"default"]
 library(ipred)
 library(caret)
 library(Metrics)
