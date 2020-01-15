@@ -1,3 +1,5 @@
+library(ipred)
+
 # Bagging is a randomized model, so let's set a seed for reproducibility
 set.seed(123)
 
