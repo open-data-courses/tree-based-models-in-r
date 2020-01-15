@@ -1,8 +1,8 @@
 library(randomForest)
 library(Metrics)
 
-load("https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/credit_ch1_train_test.RData")
-load("https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/credit_ch4_ex3_model.RData")
+load("data/credit_ch1_train_test.RData")
+load("data/credit_ch4_ex3_model.RData")
 
 # Generate predictions on the test set
 pred <- predict(object = credit_model, 
