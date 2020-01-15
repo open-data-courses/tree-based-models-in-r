@@ -12,3 +12,8 @@ print(oob_err)
 
 # Plot the model trained in the previous exercise
 plot(___)
+
+# Add a legend since it doesn't have one by default
+legend(x = "right", 
+       legend = colnames(err),
+       fill = 1:ncol(err))
