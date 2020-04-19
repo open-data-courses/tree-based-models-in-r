@@ -1,4 +1,4 @@
-# Machine Learning with Tree-Based Models in R
+# Machine learning with tree-based models in R
 
 Course Authors: Gabriela de Queiroz & Erin LeDell
 
