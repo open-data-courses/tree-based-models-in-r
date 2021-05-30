@@ -1,8 +1,6 @@
 # Machine Learning with Tree-Based Models in R
 
-
 Machine learning is the study of computer algorithms that improve automatically through experience, by learning from data.  In other words, we can train computers to make predictions or decisions without explicitly being programmed. One of the most popular approaches to machine learning, tree-based models, provides an attractive way to express knowledge and aid in decision-making.  Tree-based models use [decision trees](https://en.wikipedia.org/wiki/Decision_tree_learning) independently, or as a group (aka. "ensemble").  These types of models have proven to be an effective solution for many machine learning problems in diverse domains, such as credit scoring, fraud detection and medical diagnostics.  
-
 
 ## Course learning objectives
 
