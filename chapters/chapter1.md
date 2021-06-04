@@ -72,7 +72,7 @@ This is true, but there's another true statement here as well.
 
 <opt text="1 and 2 are true.">
 
-#1 is true, but #2 is not true.
+"#1 is true, but #2 is not true".
 
 </opt>
 
