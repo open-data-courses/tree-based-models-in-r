@@ -56,7 +56,7 @@ const Layout = ({ isHome, title, description, children }) => {
                                 <div className={classes.footerContent}>
                                     <section className={classes.footerSection}>
                                         <H3>About this course</H3>
-                                        <p>{meta.description}</p>
+                                       <div dangerouslySetInnerHTML={{__html: meta.description }} />
                                     </section>
 
                                     <section className={classes.footerSection}>
