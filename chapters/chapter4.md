@@ -71,7 +71,7 @@ The function `randomForest` takes the same arguments as the other modeling funct
 
 Here you will plot the OOB error as a function of the number of trees trained, and extract the final OOB error of the Random Forest model from the trained model object.
 
-** Instructions **
+**Instructions**
 
 - The `credit_model` trained in the previous exercise is loaded in the workspace.
 - Get the OOB error rate for the Random Forest model.
@@ -164,7 +164,7 @@ Apply the `predict()` function to `credit_model` object and `credit_test` datase
 
 In this exercise, you will use the `randomForest::tuneRF()` to tune `mtry` (by training several models). This function is a specific utility to tune the `mtry` parameter based on OOB error, which is helpful when you want a quick & easy way to tune your model.  A more generic way of tuning Random Forest parameters will be presented in the following exercise.
 
-** Instructions **
+**Instructions**
 
 - Use the `tuneRF()` function in place of the `randomForest()` function to train a series of models with different `mtry` values and examine the the results.
 - Note that (unfortunately) the `tuneRF()` interface does not support the typical formula input that we've been using, but instead uses two arguments, `x` (matrix or data frame of predictor variables) and `y` (response vector; must be a factor for classification).  
@@ -186,7 +186,7 @@ In Chapter 2, we created a manual grid of hyperparameters using the `expand.grid
 
 Keep in mind that there are other ways to select a best model from a grid, such as choosing the best model based on validation AUC.  However, for this exercise, we will use the built-in OOB error calculations instead of using a separate validation set.
 
-** Instructions **
+**Instructions**
 
 - Create a grid of `mtry`, `nodesize` and `sampsize` values.  
 - Write a simple loop to train all the models and choose the best one based on OOB error.
