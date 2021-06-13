@@ -41,7 +41,7 @@ Well, adding this extra bit of randomness leads to a collection of trees that ar
 > ?randomForest
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5590/datasets/rf_rhelp.png?raw=TRUE)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/rf_rhelp.png?raw=TRUE)
 
 
 Notes: To run the Random Forest algorithm you will use the randomForest function from the randomForest package. Let's take a look at the randomForest function in R. 

@@ -72,7 +72,7 @@ This is true, but there's another true statement here as well.
 
 <opt text="1 and 2 are true.">
 
-#1 is true, but #2 is not true.
+"1 is true, but 2 is not true".
 
 </opt>
 
@@ -127,7 +127,7 @@ The decision tree predicts Yes (they will default on their loan).  The path, fro
 
 For this exercise, you'll randomly split the [German Credit Dataset](https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29) into two pieces: a training set (80%) called `credit_train` and a test set (20%) that we will call `credit_test`. We'll use these two sets throughout the chapter.
 
-** Instructions **
+**Instructions**
 
 The `credit` data frame is loaded into the workspace.
 
@@ -203,7 +203,7 @@ The `caret` package has been loaded for you.
 
 Train two models that use a different splitting criterion and use the validation set to choose a "best" model from this group. To do this you'll use the `parms` argument of the `rpart()` function. This argument takes a named list that contains values of different parameters you can use to change how the model is trained. Set the parameter `split` to control the splitting criterion.
 
-** Instructions **
+**Instructions**
 
 The datasets `credit_test` and `credit_train` have already been loaded for you.
 

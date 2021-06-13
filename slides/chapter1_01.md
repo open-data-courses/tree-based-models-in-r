@@ -91,7 +91,7 @@ The root and internal nodes have binary test conditions associated with them and
 > help(package = "rpart") 
 ```
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5616/datasets/r_help_rpart_package.png?raw=TRUE){{2}}
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5616/datasets/r_help_rpart_package.png?raw=TRUE)
 
 Notes: One of the most popular packages for decision trees in R is the rpart package.  In the first two chapters of this course, you will use this package for training both classification and regression trees.  rpart is short for "recursive partitioning" which is a process used in the training of a decision tree model.
 

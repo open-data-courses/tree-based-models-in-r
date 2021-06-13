@@ -81,7 +81,7 @@ One thing that's particular to the `predict.gbm()` however, is that you need to 
 
 Another argument that you can specify is `type`, which is only relevant to Bernoulli and Poisson distributed outcomes.  When using Bernoulli loss, the returned value is on the log odds scale by default and for Poisson, it's on the log scale.  If instead you specify `type = "response"`, then `gbm` converts the predicted values back to the same scale as the outcome. This will convert the predicted values into probabilities for Bernoulli and expected counts for Poisson.
 
-** Instructions **
+**Instructions**
 
 - Generate predictions on the test set, using 10,000 trees.
 - Generate predictions on the test set using `type = "response"` and 10,000 trees.

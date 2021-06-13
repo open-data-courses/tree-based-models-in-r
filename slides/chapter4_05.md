@@ -114,7 +114,7 @@ Notes: If you get the last row, you'll have the final out-of-bag error.  This is
 
 # Plot the OOB error rates 
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5590/datasets/rf_model_plot.png)
+![](https://github.com/open-data-courses/tree-based-models-in-r/blob/master/images/rf_model_plot.png)
 
 Notes: When you plot a Random Forest model object, it shows a plot of the OOB error rates as a function of the number of trees in the forest. This plots helps you decide how many trees are neccessary to include in the ensemble. 
 

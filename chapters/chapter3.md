@@ -40,7 +40,7 @@ This is true, but there's another true statement here as well.
 
 <opt text="1 and 2 are correct">
 
-#1 is true, but #2 is not true.
+1 is true, but 2 is not true.
 
 </opt>
 
@@ -52,7 +52,7 @@ Well done. Proceed to the next exercise.
 
 <opt text="2 and 3 are correct">
 
-#3 is true, but #2 is not true.
+3 is true, but 2 is not true.
 
 </opt>
 </choice>
@@ -72,6 +72,7 @@ The data frame `creditsub` is in the workspace.  This data frame is a subset of 
 - The `credit_train` and `credit_test` datasets from Chapter 1 are already loaded in the workspace.
 - Use the `bagging()` function to train a bagged tree model.
 - Inspect the model by printing it.
+
 <codeblock id="03_03">
 
 You will need to specify the training dataset for the `data` argument.
@@ -95,7 +96,7 @@ In this exercise, you will predict those who will default using bagged trees. Yo
 
 It's always good to take a look at the output using the `print()` function.
 
-** Instructions **
+**Instructions**
 
 The fitted model object, `credit_model`, is already in your workspace.
 
@@ -162,7 +163,7 @@ The `trainControl()` function requires a number of folds, and here we'd like to 
 
 Generate predictions on a test set for the `caret` model.
 
-** Instructions **
+**Instructions**
 
 - First generate predictions on the `credit_test` data frame using the `credit_caret_model` object.  
 - After generating test set predictions, use the `auc()` function from the `Metrics` package to compute AUC.  
@@ -187,7 +188,7 @@ Lastly, we will print the 5-fold cross-validated estimate of AUC that is stored 
 
 On small datasets like this one, the difference between test set model performance estimates and cross-validated model performance estimates will tend to be more pronounced.  When using small data, it's recommended to use cross-validated estimates of performance because they are more stable.
 
-** Instructions **
+**Instructions**
 
 - Print the object `credit_ipred_model_test_auc`.
 - Print the object `credit_caret_model_test_auc`.
