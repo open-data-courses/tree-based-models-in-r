@@ -15,3 +15,6 @@ credit_train <- credit[train_indices, ]
   
 # Exclude the training indices to create the test set
 credit_test <- credit[-train_indices, ]  
+
+credit_train
+credit_test
