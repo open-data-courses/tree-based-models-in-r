@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import { Link } from '../components/link'
-import Logo from '../../static/logo.svg'
+import Logo from '../../static/logo.png'
 
 import classes from '../styles/index.module.sass'
 
