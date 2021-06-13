@@ -26,7 +26,7 @@ Random Forest and bagged trees are both trained on random subsets of the rows.
 
 </opt>
 
-<opt text="In Random Forest, only a subset of features are selected at random at each split in a decision tree.  In bagging, all features are used." correect="true">
+<opt text="In Random Forest, only a subset of features are selected at random at each split in a decision tree.  In bagging, all features are used." correct="true">
 
 This is the key difference between the two algorithms.
 
@@ -121,7 +121,7 @@ What is the main advantage of using OOB error instead of validation or test erro
 
 </opt>
 
-<opt text="If you evaluate your model using OOB error, then you don't need to create a separate test set." correect="true">
+<opt text="If you evaluate your model using OOB error, then you don't need to create a separate test set." correct="true">
 
 This allows you to use all of rows in your original dataset for training.
 

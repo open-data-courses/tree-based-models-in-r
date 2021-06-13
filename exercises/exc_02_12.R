@@ -23,3 +23,16 @@ for (i in 1:num_models) {
     rmse_values[i] <- rmse(actual = grade_valid$final_grade, 
                            predicted = ___)
 }
+
+# Identify the model with smallest validation set RMSE
+best_model <- grade_models[[which.min(rmse_values)]]
+
+# Print the model paramters of the best model
+best_model$control
+
+# Compute test set RMSE on best_model
+pred <- predict(object = ___,
+                newdata = ___)
+rmse(actual = grade_test$final_grade, 
+     predicted = ___)
+}
